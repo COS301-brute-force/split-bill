@@ -17,18 +17,22 @@ $(function(){
 
 function fitVideoToViewport() {
     if((parseFloat(viewportWidth) / viewportHeight) > videoRatio) {
-        var topOffset = ($("#promo-video").height() - viewportHeight)/2 * -1;
         $("#promo-video").css({
             "width": "100vw",
-            "height": "auto",
+            "height": "auto"
+        });
+        var topOffset = ($("#promo-video").height() - viewportHeight)/2 * -1;
+        $("#promo-video").css({
             "margin-left": "auto",
             "margin-top": topOffset+"px"
         });
     } else {
-        var leftOffset = ($("#promo-video").width() - viewportWidth)/2 * -1;
         $("#promo-video").css({
             "width": "auto",
             "height": "100vh",
+        });
+        var leftOffset = ($("#promo-video").width() - viewportWidth)/2 * -1;
+        $("#promo-video").css({
             "margin-top": "auto",
             "margin-left": leftOffset+"px"
         });

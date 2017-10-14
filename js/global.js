@@ -1,3 +1,9 @@
+$(window).on('load', function () {
+    console.log("Loaded");
+    $(".loader-container").fadeOut(1000);
+    $("body").css("overflow", "auto");
+    
+});
 $(function(){
 
     isPaused = true;
@@ -6,12 +12,6 @@ $(function(){
     $(".loader").show();
 
     // Close loader on load
-    $(window).on('load', function () {
-        
-        $(".loader-container").fadeOut(1000);
-        $("body").css("overflow", "auto");
-        
-    });
     
     $(".text-color-dot span").css("height", $(".text-color-dot span").css("width"));
 
@@ -66,6 +66,6 @@ function togglePromoPlay() {
         $(".video-button").hide();
         $("#promo-video")[0].play();
     } else {
-        $("#promo-video")[0].load();
+        $("#promo-video")[0].pause();
     }
 }

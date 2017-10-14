@@ -8,6 +8,10 @@ $(function(){
     sections.push("section-02");
     sections.push("section-03");
     sections.push("section-04");
+    sections.push("section-05");
+    sections.push("section-06");
+    sections.push("section-07");
+    sections.push("section-08");
 
     currentIndex = 0;
     currentSection = $("."+sections[currentIndex]);
@@ -25,7 +29,7 @@ $(function(){
             pausePromoHandler();
 
         if(!isScrolling) {
-            if(isScrollingDown() && currentSection.offset().top < currentScrollBarPosition) {
+            if(isScrollingDown() && currentSection.offset().top < currentScrollBarPosition && currentIndex < sections.length-1) {
                 scrollToNextSection();
             } else if(!isScrollingDown() && currentSection.offset().top > currentScrollBarPosition) {
                 scrollToPreviousSection();
