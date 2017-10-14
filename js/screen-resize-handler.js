@@ -1,10 +1,13 @@
+$(window).on('load', function () {
+    if(apiReady)
+        fitVideoToViewport();
+});
+
 $(function(){
         
     viewportWidth = $(window).width();
     viewportHeight = $(window).height();
-    videoRatio = 1.777777777;
-
-    fitVideoToViewport();
+    videoRatio = 1.777;
 
     $(window).resize(function() {
         viewportWidth = $(window).width();
@@ -16,6 +19,8 @@ $(function(){
 });
 
 function fitVideoToViewport() {
+    var playerHeight  = (parseFloat(viewportWidth) / videoRatio);
+    player.setSize(viewportWidth, playerHeight);
     if((parseFloat(viewportWidth) / viewportHeight) > videoRatio) {
         $("#promo-video").css({
             "width": "100vw",
@@ -38,3 +43,4 @@ function fitVideoToViewport() {
         });
     }
 }
+
