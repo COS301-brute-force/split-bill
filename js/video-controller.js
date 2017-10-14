@@ -1,6 +1,11 @@
 $(function(){
+
+    var scriptElement = document.createElement("script");
+    scriptElement.src = "http://www.youtube.com/iframe_api";
+    var firstScriptElement = document.getElementsByTagName("script")[0];
+    firstScriptElement.parentNode.insertBefore(scriptElement,firstScriptElement);
     
-    player;
+    player = null;
     apiReady = false;
     isPaused = true;
 
