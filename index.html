@@ -5,32 +5,455 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="icon" type="image/png" href="assets/images/icon.png" />
+
 	<!-- BOOTSTRAP CSS -->
 	<link	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" 
 			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
 			crossorigin="anonymous" />
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
 	<link	href="css/style.css" rel="stylesheet" />
+	<link	href="css/loader.css" rel="stylesheet" />
 	
 </head>
 	<body>
 		
 		<div class="container-fluid">
 
-			<div class="row section section-01">
+			<div class="loader-container"><div style="width:100%;height:100%" class="loader"><div></div><div></div></div></div>
 
+			<div class="row section section-01">
+				<div class="video-container">
+					<div class="video-button-container">
+						<div class="video-button bold-weight">
+							<p class="unselectable">Let's Go!</p>
+							<div class="video-button-bg"></div>
+						</div>
+					</div>
+					<div class="logo-container col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3"><img src="assets/images/split_bill_w.png" /></div>
+					<div id="player"></div>
+					<!-- <video id="promo-video">
+						<source src="assets/videos/Promo.mp4" type="video/mp4">
+					</video> -->
+				</div>
 			</div>
 
 			<div class="row section section-02">
-				
+				<div class="col-md-12 offset-md-1">
+					<h1 class="light-weight">ab<span class="text-color-dot"><span></span>o</span>ut</h1>
+					<div class="content">
+						<p>
+						This cross-platform mobile application will effortlessly assist with the task of deciding who will pay what when the bill arrives. <br/> After taking a photo of your bill OCR text recognition will create an interface that will be used to claim items and see the total amount you owe.<br/> The same interface will be duplicated on everyone around the table's phone and changes will be updated on the different phones in real time.
+						</p>
+					</div>
+				</div>
 			</div>
 
 			<div class="row section section-03">
-				
+				<div class="col-md-12 offset-md-1">
+					<h1 class="light-weight">team</h1>
+
+					<div id="duart-content" class="member-container col-lg-12 col-md-12 col-sm-12 col-xs-12 panel panel-default">
+						<div class="panel-heading col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="member-image col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<div class="circle-avatar-bg"></div>
+								<div class="circle-avatar" style="background-image: url('assets/images/team-images/duart.jpg')"></div>
+							</div>
+							<div class="member-info col-md-9 col-sm-8 col-xs-8">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p class="thin-weight headings">Duart Breedt</p></div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon bold-weight" id="basic-addon1">E-mail</span>
+										<p class="member-email control" aria-describedby="basic-addon1">u15054692@tuks.co.za</p>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon bold-weight" id="basic-addon1">WhatsApp</span>
+										<p class="member-email control" aria-describedby="basic-addon1">076 858 5447</p>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon bold-weight" id="basic-addon2">Degree</span>
+										<p class="member-degree control" aria-describedby="basic-addon2">B.IS Multimedia</p>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="links">
+										<a class="btn btn-default btn-custom" href="https://github.com/DuartBreedt" target="_blank">GitHub</a>
+										<a class="btn btn-default btn-custom" href="https://www.linkedin.com/in/duart-breedt-9a3429b7/" target="_blank">LinkedIn</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body real-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="col-lg-10 col-md-offset-1">
+								<h3 class="light-weight">About Me</h3>
+								<div>
+									<p>
+									I take pride in making all my work aesthetically pleasing and believe it is of the utmost importance that all user-centered products should have great UI and UX design.
+									<br/>
+									I think of myself as a perfectionistic completionist. Characteristically, I work persistently on any endeavour I undertake until I have produced a quality product I am proud of.
+									<br/>
+									I find that if I am not learning, I am bored. Therefore, I strive to seek out challenges which push my limits and force me to contend with steep learning curves.
+									<br/>
+									I strongly believe that if you ever wish to be great at what you do you should ensure you are never the smartest person in the room. People are vessels of knowledge and will teach you more than you would like to know if you let them.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-offset-1">
+								<h3 class="light-weight">Experience/Previously completed projects</h3>
+								<div>
+									<p>
+									Developed a website for Caelum Technologies
+									<br/>
+									Developing a website for the National Field Trial Association
+									<br/>
+									Developing a website for TallTrees Learning Community
+									<br/>
+									Developed an ecommerce website as an undergraduate based project <a href="http://77-breedt.000webhostapp.com" class="btn btn-default btn-custom" target="_blank">View</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="row section section-04">
-				
+				<div class="col-md-12 offset-md-1">
+
+					<div id="linda-content" class="member-container col-lg-12 col-md-12 col-sm-12 col-xs-12 panel panel-default">
+						<div class="panel-heading col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="member-image col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<div class="circle-avatar-bg"></div>
+								<div class="circle-avatar" style="background-image: url('assets/images/team-images/linda.jpg')"></div>
+							</div>
+							<div class="member-info col-md-9 col-sm-8 col-xs-8">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p class="thin-weight headings">Linda Potgieter</p></div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon bold-weight" id="basic-addon1">E-mail</span>
+										<p class="member-email control" aria-describedby="basic-addon1">u14070091@tuks.co.za</p>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon bold-weight" id="basic-addon2">Degree</span>
+										<p class="member-degree control" aria-describedby="basic-addon2">B.Sc IT Genetics</p>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="links">
+										<a class="btn btn-default btn-custom" href="https://github.com/LindaPotgieter" target="_blank">GitHub</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body real-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="col-lg-10 col-md-offset-1">
+								<h3 class="light-weight">About Me</h3>
+								<div>
+									<p>
+										I am always up for a challenge. Nothing great is worth achieving by taking the easy way out. I am always analyzing the problem to ensure I find the most effective but easiest to understand solution. 
+										<br/>
+										I am always willing to find a solution to a problem on my own, but I know when I need to ask for assistance. Struggling alone is not an option when project quality is at stake. Strong believer in the use and creation of complete and concise documentation for any project. 
+										<br/>
+										I perform well under pressure, but ensure the pressure placed on myself with regards to my studies is at minimum by setting milestones and achieving them within a set timeframe. No one likes sloppy last minute work, and clients deserve more than that, even if it is only a teaching assistant assessing the work.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-offset-1">
+								<h3 class="light-weight">Experience/Previously completed projects</h3>
+								<div>
+									<p>
+										Redesign of mobile application to comply with HCI standards as undergraduate project
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row section section-05">
+				<div class="col-md-12 offset-md-1">
+
+					<div id="matthew-content" class="member-container col-lg-12 col-md-12 col-sm-12 col-xs-12 panel panel-default">
+						<div class="panel-heading col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="member-image col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<div class="circle-avatar-bg"></div>
+								<div class="circle-avatar" style="background-image: url('assets/images/team-images/matthew.jpg')"></div>
+							</div>
+							<div class="member-info col-md-9 col-sm-8 col-xs-8">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p class="thin-weight headings">Matthew Perry</p></div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon bold-weight" id="basic-addon1">E-mail</span>
+										<p class="member-email control" aria-describedby="basic-addon1">u13017030@tuks.co.za</p>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon bold-weight" id="basic-addon2">Degree</span>
+										<p class="member-degree control" aria-describedby="basic-addon2">B.Sc IT GIS</p>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="links">
+										<a class="btn btn-default btn-custom" href="https://github.com/perrymatthew" target="_blank">GitHub</a>
+										<a class="btn btn-default btn-custom" href="https://www.linkedin.com/in/matthew-perry-754b5471/" target="_blank">LinkedIn</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body real-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="col-lg-10 col-md-offset-1">
+								<h3 class="light-weight">About Me</h3>
+								<div>
+									<p>
+										I am passionate about software development. Being able to write code to solve a problem excites me. I am driven to be able to learn new technologies and be able to use them to create software and solve problems. I am a critical thinker that thrives when given something complex to assess and work on.
+										<br/>
+										I am able to work well under pressure and ensure that the final result exceeds expectations. I can adapt to the situation so that I can perform at my peak. Learning and gathering experience are very important aspects in my life.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-offset-1">
+								<h3 class="light-weight">Experience/Previously completed projects</h3>
+								<div>
+									<p>
+										HCI task to redesign an app to improve user experience.
+										<br/>
+										Programmed an FPGA board using VHDL.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row section section-06">
+				<div class="col-md-12 offset-md-1">
+		
+					<div id="mia-content" class="member-container col-lg-12 col-md-12 col-sm-12 col-xs-12 panel panel-default">
+						<div class="panel-heading col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="member-image col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<div class="circle-avatar-bg"></div>
+								<div class="circle-avatar" style="background-image: url('assets/images/team-images/mia.jpg')"></div>
+							</div>
+							<div class="member-info col-md-9 col-sm-8 col-xs-8">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p class="thin-weight headings">Mia Gerber</p></div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon bold-weight" id="basic-addon1">E-mail</span>
+										<p class="member-email control" aria-describedby="basic-addon1">u15016502@tuks.co.za</p>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon bold-weight" id="basic-addon2">Degree</span>
+										<p class="member-degree control" aria-describedby="basic-addon2">B.IS Multimedia</p>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="links">
+										<a class="btn btn-default btn-custom" href="https://github.com/vossca" target="_blank">GitHub</a>
+										<a class="btn btn-default btn-custom" href="https://www.linkedin.com/in/mia-gerber-6b6b7713a" target="_blank">LinkedIn</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body real-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="col-lg-10 col-md-offset-1">
+								<h3 class="light-weight">About Me</h3>
+								<div>
+									<p>
+										Logical thinking and reasoning has always come naturally to me, I enjoy being posed a question or problem and then left to use the tools at my disposal to answer and/or solve it. 
+										<br/>
+										I am stubborn in the pursuit of success, which leads to many hours being sunk into troubleshooting if a product or deliverable does not meet all the requirements. 
+										<br/>
+										I am skilled in both the technical and creative side of development, in other words, formulating somewhat unconventional solutions and then executing them in a professional manner.
+										<br/>
+										I believe that my team members and I are capable of making this project a success through our already existing abilities as well as sheer tenacity.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-offset-1">
+								<h3 class="light-weight">Experience/Previously completed projects</h3>
+								<div>
+									<p>
+										University of Pretoria’s EBIT Week IT team
+										<br/>
+										eCommerce website (both front and backend develvopment) as undergraduate project
+										<br/>
+										Teaching Assistant for the Computer Science department
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row section section-07">
+				<div class="col-md-12 offset-md-1">
+
+					<div id="wanrick-content" class="member-container col-lg-12 col-md-12 col-sm-12 col-xs-12 panel panel-default">
+						<div class="panel-heading col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="member-image col-lg-2 col-md-2 col-sm-3 col-xs-4">
+								<div class="circle-avatar-bg"></div>
+								<div class="circle-avatar" style="background-image: url('assets/images/team-images/wanrick.jpg')"></div>
+							</div>
+							<div class="member-info col-md-9 col-sm-8 col-xs-8">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p class="thin-weight headings">Wanrick Willemse</p></div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon bold-weight" id="basic-addon1">E-mail</span>
+										<p class="member-email control" aria-describedby="basic-addon1">u29560617@tuks.co.za</p>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon bold-weight" id="basic-addon2">Degree</span>
+										<p class="member-degree control" aria-describedby="basic-addon2">B.IS Multimedia</p>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="links">
+										<a class="btn btn-default btn-custom" href="https://github.com/wanrick" target="_blank">GitHub</a>
+										<a class="btn btn-default btn-custom" href="https://www.linkedin.com/in/wanrick-willemse-b0b06591" target="_blank">LinkedIn</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body real-content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="col-lg-10 col-md-offset-1">
+								<h3 class="light-weight">About Me</h3>
+								<div>
+									<p>
+										I’ve always enjoyed finding a solution to a challenge. I believe that anything can be overcome if it is approached systematically and with determination. 
+										<br/>
+										Meticulous design and thorough planning should be at the forefront of tackling a problem. I try to establish a vision and use it as a roadmap when creating something. I consider a product successful when I can see it is of a high standard.
+										<br/>
+										I am adaptable and can function well under pressure. When it comes to my work, there is no settling for second best.
+										<br/>
+										Developing high-quality software expects no less.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-offset-1">
+								<h3 class="light-weight">Experience/Previously completed projects</h3>
+								<div>
+									<p>
+										7 years work experience at a pathology company
+										<br/>
+										eCommerce website as undergraduate project
+										<br/>
+										Tutor for first year webdesign and second year Visual Design
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row section section-08">
+				<div class="col-md-12 offset-md-1">
+					<h1 class="light-weight"><span class="text-color-dot"><span></span>o</span>ther</h1>
+
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 panel panel-default team-link-container">
+						<div class="panel-heading"><h3 class="headings thin-weight">Team Links</h3></div>
+						<div class="panel-body real-content">
+							<h3>Repositories</h3>
+							<div class="link-btn">
+								<a class="team-links github btn btn-custom btn-default" href="https://github.com/COS301-brute-force" target="_blank"><p>Team Repository</p><img src="https://joshuapenalba.files.wordpress.com/2014/12/github-icon.png"/></a>
+							</div>
+							<div class="link-btn">
+								<a class="team-links zenhub btn btn-custom btn-default" href="https://github.com/perrymatthew/Brute-Force#boards" target="_blank"><p>Scrumboard (ZenHub)</p><img src="https://cdn-images-1.medium.com/max/400/1*mCioHOAvH1BlhPVZEXuKIw.png"/></a>
+							</div>
+							<h3>Documentation</h3>
+							<div class="link-btn">
+								<a class="team-links btn btn-custom btn-default" href="https://docs.google.com/document/d/1X_n8wSRZRA6gd6w0bAdL9MlCfc-9askTlykC-DxlNTQ/edit?usp=sharing" target="_blank"><p>SRS Document</p><img src="https://i.imgur.com/GIiwHRe.png"/></a>
+							</div>
+							<div class="link-btn">
+								<a class="team-links btn btn-custom btn-default" href="https://docs.google.com/document/d/1jC8d4RIOwWje-8IhdSdYQF7me1rOJH65hY8QojmwxvY/edit?usp=sharing" target="_blank"><p>Progress Report</p><img src="https://i.imgur.com/GIiwHRe.png"/></a>
+							</div>
+							<div class="link-btn">
+								<a class="team-links btn btn-custom btn-default" href="https://github.com/COS301-brute-force/Brute-Force/blob/development/Final_Documentation/SplitBill_UserManual.pdf" target="_blank"><p>User Manual</p><img src="https://i.imgur.com/GIiwHRe.png"/></a>
+							</div>
+							<h3>Other</h3>
+							<div class="link-btn">
+								<a class="team-links btn btn-custom btn-default" href="https://COS301-BruteForce.slack.com" target="_blank"><p>Slack</p><img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png"/></a>
+							</div>
+							<div class="link-btn">
+								<a class="team-links btn btn-custom btn-default" href="https://cos301-brute-force.github.io/split-bill/" target="_blank"><p>SplitBill Website</p><img src="https://i.imgur.com/GIiwHRe.png"/></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 panel panel-default team-link-container">
+						<div class="panel-heading"><h3 class="headings thin-weight">Modules&#39; User Manuals</h3></div>
+						<div class="panel-body real-content">
+							<div class="link-btn">
+								<a class="team-links btn btn-custom btn-default" href="https://github.com/COS301-brute-force/Platypus-Mobile/wiki/User-Manual" target="_blank"><p>Mobile</p><img src="https://i.imgur.com/GIiwHRe.png"/></a>
+							</div>
+							<div class="link-btn">
+								<a class="team-links btn btn-custom btn-default" href="https://github.com/COS301-brute-force/Platypus-API/wiki" target="_blank"><p>API</p><img src="https://i.imgur.com/GIiwHRe.png"/></a>
+							</div>
+							<div class="link-btn">
+								<a class="team-links btn btn-custom btn-default" href="https://github.com/COS301-brute-force/Platypus-OCR/wiki" target="_blank"><p>OCR</p><img src="https://i.imgur.com/GIiwHRe.png"/></a>
+							</div>
+						</div>
+					</div>
+					<!-- <div>
+						<h2>User manuals</h2>
+						<div>
+							<a href="https://github.com/COS301-brute-force/Platypus-Mobile/wiki/User-Manual" target="_blank"><h3>Module: Mobile</h3>
+							<img src="logo-images/splitbill-circular-logo.png"/>
+							</a>
+						</div>
+						<div>
+							<a href="https://github.com/COS301-brute-force/Platypus-API/wiki" target="_blank"><h3>Module: API</h3>
+							<img src="logo-images/splitbill-circular-logo.png"/>
+							</a>
+						</div>
+						<div>
+							<a href="https://github.com/COS301-brute-force/Platypus-OCR/wiki" target="_blank"><h3>Module: OCR</h3>
+							<img src="logo-images/splitbill-circular-logo.png"/>
+							</a>
+						</div>
+					</div>
+					<div>
+						<h2>Team Links</h2>
+						<div>
+							<h3>Repositories</h3>
+							<div>
+								<a href="https://github.com/COS301-brute-force" target="_blank"><p>Team Repository</p></a>
+							</div>
+							<div>
+								<a href="https://github.com/perrymatthew/Brute-Force#boards" target="_blank"><p>Scrumboard</p></a>
+							</div>
+						</div>
+						<div>
+							<h3>Documentation</h3>
+							<div>
+								<a href="https://docs.google.com/document/d/1X_n8wSRZRA6gd6w0bAdL9MlCfc-9askTlykC-DxlNTQ/edit?usp=sharing" target="_blank"><p>SRS Document</p></a>
+							</div>
+							<div>
+								<a href="https://docs.google.com/document/d/1jC8d4RIOwWje-8IhdSdYQF7me1rOJH65hY8QojmwxvY/edit?usp=sharing" target="_blank"><p>Progress Report</p></a>
+							</div>
+						</div>
+						<div>
+							<h3>Other</h3>
+							<div>
+								<a href="https://COS301-BruteForce.slack.com" target="_blank"><p>Slack</p></a>
+							</div>
+						</div>
+					</div> -->
+				</div>
 			</div>
 
 		</div>
@@ -51,7 +474,9 @@
 		crossorigin="anonymous">
 	</script>
 
-	<script
-		src="js/scroll-handler.js" />
-	</script>
+	<script src="https://www.youtube.com/iframe_api"/></script>
+	<script src="js/global.js" /></script>
+	<script src="js/video-controller.js" /></script>
+	<script src="js/scroll-handler.js" /></script>
+	<script src="js/screen-resize-handler.js" /></script>
 </html>
