@@ -1,7 +1,7 @@
 $(function(){
 
     var scriptElement = document.createElement("script");
-    scriptElement.src = "http://www.youtube.com/iframe_api";
+    scriptElement.src = "https://www.youtube.com/iframe_api";
     var firstScriptElement = document.getElementsByTagName("script")[0];
     firstScriptElement.parentNode.insertBefore(scriptElement,firstScriptElement);
     
