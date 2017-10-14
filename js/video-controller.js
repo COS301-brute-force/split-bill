@@ -19,7 +19,7 @@ $(function(){
             width: '720',
             videoId: 'SYeJnMEnclk',
             events: {
-                'onPlayerReady': alert,
+                'onReady': alert,
                 'onStateChange': onPlayerStateChange
             }
         });
